@@ -1,0 +1,22 @@
+<div class="container-fluid image-holder">
+  <div class="h-100 row align-items-center">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 container">
+        <h2 class="text-center" style="margin-bottom: 30px;">Sign in to PoliPool</h2>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">College number</label>
+          <input #numberSelector (change) = "setCollegeNumber(numberSelector.value)" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter college number">
+        </div>
+        <div class="form-group" style="margin-bottom: 50px; margin-top: 30px;">
+          <label for="exampleInputPassword1">Name</label>
+          <input #nameSelector (change)="setName(nameSelector.value)" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your name">
+        </div>
+        <div class="form-group text-center">
+          <button (click)="onClick()" type="submit" class="btn btn-primary center">Sign in</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
